@@ -4,17 +4,17 @@
 function getRandomInt() {
     return Math.ceil(Math.random() * 10)
 }
-// Objects 
-
+// 1.Objects 
+// 1.1 Breakfast
 const breakfast = {
     1: {
         name: 'Protein packed oatmeal',
-        ingredients: '130g old rolled oats, 900ml water, 4 eggs, 2 banana, 480ml unsweetened plant-based milk, 1tsp cinnamon'
+        ingredients: '130g old rolled oats, 900ml water, 4 eggs, 2 banana, 480ml unsweetened plant-based milk, 1tsp cinnamon',
         kcal: 298
     },
     2: {
         name: 'Sweet Banana Omelette',
-        ingredients: '2 large eggs, 1 medium banana, 1tsp almond butter, 2tsp maple syrup, 4 raw walnut halves, 1Tbls dried coconut flakes, cinnamon, pinch of sea salt'
+        ingredients: '2 large eggs, 1 medium banana, 1tsp almond butter, 2tsp maple syrup, 4 raw walnut halves, 1Tbls dried coconut flakes, cinnamon, pinch of sea salt',
         kcal: 441
     },
     3: {
@@ -56,5 +56,57 @@ const breakfast = {
         name: 'Bacon & egg breakfast tacos',
         ingredients: '8 thin bacon slices, 8 eggs, Spray oil, 8 small tortillas, 30g of shredded cheese, 40g baby spinach, 1/2 small onion, 1 tomato, 2tsp sriracha sauce',
         kcal: 345
+    }
+}
+const launch = {
+    1: {
+        name: 'Tuna and avocado salad',
+        ingredients: '4 servings: 480g canned tuna in water, 8 small eggs, 4 small avocado, 600g cherry tomatoes, 1 small red onion, 160g mixed salad, 4tbsp fresh lemon juice, 2tbsp olive oil, 1tsp sea salt, 1/2 tsp chili flakes',
+        kcal: 548
+    },
+    2: {
+        name: 'Crunchy salmon and broccoli',
+        ingredients: '4 servings: 500g salmon fillet, 800g broccoli, 4tbsp almonds, 4 apples, 160g baby spinach, 3tbsp olive oil, 1tsp sea salt, 1/2tsp chilli flakes, 2tbsp dill',
+        kcal: 559
+    },
+    3: {
+        name: 'Tuna and tomato pasta',
+        ingredients: '4 servings: 360g canned tuna in water, 8pcs anchovies fillets in oil, 2 garlic cloves, 500g cherry tomatoes, 3tsp olive oil, 400g pasta, 2tsp chili flakes',
+        kcal: 602
+    },
+    4: {
+        name: 'Chicken and vegetable stew with rice',
+        ingredients: '4 servings: 800g chicke breast, 1 yellow bell paper, 1 red bell paper, 1 zucchini, 150g of water chestnuts, 1 garlic clove, 1/2tbsp olive oil, 170g jasmine rice, 400ml coconut milk, 240ml water, 1tsp chili flakes, 2tbsp curry powder, 1 lime ',
+        kcal: 650
+    },
+    5: {
+        name: 'Tofu and bean bowl',
+        ingredients: '4 servings: 600g tofu, 400g peeled edamame beans, 180g brown rice, 4 eggs, 2tbsp olive oil, 120g baby spinach, 1tbsp sesame seeds, 1tsp salt, 1tsp ground cummin, 1tsp curry powder',
+        kcal: 579
+    },
+    6: {
+        name: 'Salmon and broccoli with cottage cheese',
+        ingredients: '4 servings; 200g barley, 500g salmon, 600g broccoli, 500g precooked beets, 240g cottage cheese, 1 lemon',
+        kcal: 599
+    },
+    7: {name: 'Chicken rice bowl',
+        ingredients: '4 servigns: 500g chicken thighs, 2tbsp tamari sauce, 1tbsp ginger powder, 1tbsp honey, 1 cup brown rice, 160g kale, 2pcs red bell pepper, 4 eggs',
+        kcal: 513
+        
+    },
+    8: {
+        name: 'Baked patato with creamy tunna salad',
+        ingredients: '4 servings: 4 big patatoes, 560g canned tuna in water, 1 red onion, 360ml Greek yogurt, 1tbsp salt, 1tsp chili flakes, 1tbsp lemon zest, 15g chopped parsley, 2tbsp olive oil, 320g cherry tomatoes',
+        kcal: 578
+    },
+    9: {
+        name: 'Vegan poke bowl',
+        ingredients: '4 servings: 500g tofu, 1tbsp sesame seeds, 2tbsp sesame oil, 4tbsp soy sauce, 2tbsp sriracha, 1 garclic clove, 300g jasmine rice, 1 magno, 100g shredded red cabbage, 155g edamame beans, 3 tomatoes, 40g baby spinach',
+        kcal: 562
+    },
+    10: {
+        name: 'Salmon and carrot salad with mint dressing',
+        ingredients: '4 servings: 480g salmon fillet, 225g brown rice, 6 carrots, 1 cucumber, 240ml Greek yogurt, 1 handfull of mint leaves, 1 clove of chopped garlic, 1tsp chili flakes ',
+        kcal: 579
     }
 }
