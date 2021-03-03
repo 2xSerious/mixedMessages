@@ -1,23 +1,54 @@
 // Mixed Messages Project 
 
+
+
 // Get random number 1-10
 function getRandomInt() {
     return Math.ceil(Math.random() * 10)
 }
 
 
-// Taking 3 random names from ojbect 
+// Suggest 3 random meals 
 const suggestions = obj => {
     let suggest = [];
-    
+  
     while (suggest.length < 3){
         let i = getRandomInt();
         if (!suggest.includes(obj[i].name)){
-            suggest.push(obj[i].name);
+            suggest.push(`${obj[i].name}`) // ${obj[i].kcal}kcal`);
+           
+        }
+        
+    }
+    
+    return suggest;
+}
 
+
+function findIndexOF(obj,key,value){
+    let ind = 0;
+    for (let i = 1; i < 11; i++){
+        if (obj[i][key] === value){
+            ind = i -1;
+            
         }
     }
-    return suggest;
+    return ind;
+}
+// Today's Pick
+function messageBox() {
+    let suggestBreakfast = suggestions(breakfast);
+    let suggestLaunch = suggestions(launch);
+    let suggestDinner = suggestions(dinner);
+    let iB = findIndexOF(breakfast,'name',suggestBreakfast[0]) +1;
+    let iL = findIndexOF(launch,'name',suggestLaunch[0]) + 1;
+    let iD = findIndexOF(dinner,'name',suggestDinner[0]) + 1;
+    let totalSum = 0;
+    totalSum = breakfast[iB]['kcal'] + launch[iL]['kcal'] + dinner[iD]['kcal'];
+    return console.log(`Today's pick: \n Breakfast:\n 1.${suggestBreakfast[0]},\n 2.${suggestBreakfast[1]},\n 3.${suggestBreakfast[2]}\n  Launch:\n 1.${suggestLaunch[0]},\n 2.${suggestLaunch[1]},\n 3.${suggestLaunch[2]} \n  Dinner:\n 1.${suggestDinner[0]},\n 2.${suggestDinner[1]},\n 3.${suggestDinner[2]}
+    \n \n We suggest for breakfast: ${suggestBreakfast[0]}, \n for launch:  ${suggestLaunch[0]}, \n and for dinner:  ${suggestDinner[0]} \n Total Kcal: ${totalSum}`);
+    //return console.log(breakfast[iB]['kcal'] + launch[iL]['kcal']);
+    
 }
 // Objects 
 const breakfast = {
@@ -176,4 +207,3 @@ const dinner = {
         kcal: 109
     }
 }
- 
