@@ -4,8 +4,22 @@
 function getRandomInt() {
     return Math.ceil(Math.random() * 10)
 }
-// 1.Objects 
-// 1.1 Breakfast
+
+
+// Taking 3 random names from ojbect 
+const suggestions = obj => {
+    let suggest = [];
+    
+    while (suggest.length < 3){
+        let i = getRandomInt();
+        if (!suggest.includes(obj[i].name)){
+            suggest.push(obj[i].name);
+
+        }
+    }
+    return suggest;
+}
+// Objects 
 const breakfast = {
     1: {
         name: 'Protein packed oatmeal',
@@ -110,7 +124,7 @@ const launch = {
         kcal: 579
     }
 }
-const breakfast = {
+const dinner = {
     1: {
         name: 'Grileld chicken with veggies',
         ingredients: '4 servings: 600g chicken breast, 800g patatoes, 800g carrots, 2tbsp olive oil, 180ml Greek yogurt',
@@ -162,3 +176,4 @@ const breakfast = {
         kcal: 109
     }
 }
+ 
