@@ -110,3 +110,55 @@ const launch = {
         kcal: 579
     }
 }
+const breakfast = {
+    1: {
+        name: 'Grileld chicken with veggies',
+        ingredients: '4 servings: 600g chicken breast, 800g patatoes, 800g carrots, 2tbsp olive oil, 180ml Greek yogurt',
+        kcal: 500
+    },
+    2: {
+        name: 'Broccoli soup',
+        ingredients: '4 servings: 1kg broccoli, 1 yellow onion, 2 vegetable bouillon cube, 2 tbsp olive oil, 960ml water, 60g spinach, 4 eggs, 8 slices whole wheat bread',
+        kcal: 464
+    },
+    3: {
+        name: 'Roasted potatoes and vegetables',
+        ingredients: '4 servings: 2 big potatoes, 300g Brussels sprouts, 2 apples, 2 red onions, 80g shredded kale, 2tbsp olive oil, 1 bunch of fresh thyme, 1tbsp salt, 1/2 chili flakes',
+        kcal: 216
+    },
+    4: {
+        name: 'Curry and tofu noodles',
+        ingredients: '4 servings:  1 yellow onion, 1 garlic clove, 340g firm tofu, 2 tsp olive oil, 2tbsp yellow curry powder, 400ml coconut milk, 120ml water, 320 egg noodles, 1 cup fresh cilantro',
+        kcal: 598
+    },
+    5: {
+        name: 'Chicken and lentil soup',
+        ingredients: '4 servings: 480 g chicken breast, 280g carrots, 300g leek, 200g red lentils, 6 cups chicken stock, 2tbsp yellow curry powder, 1tsp salt, 1/4tsp ground black pepper, 30g chopped parsley',
+        kcal: 596
+    },
+    6: {
+        name: 'Beef and cripsy mango salad',
+        ingredients: '4 servings: 680g beefsteak, 1 mango, 1/2 cucumber, 1 red onion, 400g red cabbage, 160g romaine lettuce, 4tbsp olive oil',
+        kcal: 544
+    },
+    7: {name: 'Chicken in lettuce leaf salad',
+        ingredients: '4 servigns: 600g chicken breast, 4tbsp olive oil, 1tbsp chopped ginger, 1tsp chili flakes, 1 mango, 175g canned corn, 3 red bell peppers, 200g lettuce leaves, 6tbsp soy sauce, 30g cilantro, 1 lime',
+        kcal: 463
+        
+    },
+    8: {
+        name: 'Grilled watermelon and feta cheese salad',
+        ingredients: '4 servings: 1 small watermelon, 1 lemon, 1 chioggia beet, 300g feta cheese, 80g of arugula, 4 tbsp fresh dill, 2tbsp olive oil, 1tsp sea salt, 1/2tsp chili flakes',
+        kcal: 422
+    },
+    9: {
+        name: 'Pasta salad with grileld broccoli and bacon',
+        ingredients: '4 servings: 200g penne pasta, 2 red bell peppers, 1 red onion, 2 fresh heads of broccoli, 8 slices of turkey bacon, 110g shredded parsley, 175g canned corn, 2tbsp olive oil, 1tsp white vinegar, 1tsp chili flakes, 1tsp sea salt',
+        kcal: 425
+    },
+    10: {
+        name: 'Creamy coleslaw',
+        ingredients: '4 servings: 100g shredded cabbage, 110g shredded carrots, 130g sliced leak, 2 shredded crispy apples, 240ml Greek yogurt, 1tbsp Dijon mustard, 1tsp sea salt ',
+        kcal: 109
+    }
+}
