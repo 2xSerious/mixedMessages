@@ -36,7 +36,7 @@ function findIndexOF(obj,key,value){
     return ind;
 }
 
-// Today's Pick
+// Today's Pick, message.
 function messageBox() {
     let suggestBreakfast = suggestions(breakfast);
     let suggestLaunch = suggestions(launch);
@@ -53,6 +53,7 @@ function messageBox() {
     
     
 }
+// Find ingredients based on obj and ojb.name 
 function findIngredients(obj,value){
     let ingredients;
     for (ii= 1; ii < 11; ii++){
@@ -219,3 +220,7 @@ const dinner = {
         kcal: 109
     }
 }
+
+
+//execute 
+return messageBox();
