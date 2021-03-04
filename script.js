@@ -15,7 +15,7 @@ const suggestions = obj => {
     while (suggest.length < 3){
         let i = getRandomInt();
         if (!suggest.includes(obj[i].name)){
-            suggest.push(`${obj[i].name} `) //${obj[i].kcal}kcal`);
+            suggest.push(obj[i].name) 
            
         }
         
@@ -44,12 +44,13 @@ function messageBox() {
     let iB = findIndexOF(breakfast,'name',suggestBreakfast[0]) +1;
     let iL = findIndexOF(launch,'name',suggestLaunch[0]) + 1;
     let iD = findIndexOF(dinner,'name',suggestDinner[0]) + 1;
+
     let totalSum = 0;
     totalSum = breakfast[iB]['kcal'] + launch[iL]['kcal'] + dinner[iD]['kcal'];
 
 
     return console.log(`Today's pick: \n Breakfast:\n 1.${suggestBreakfast[0]},\n 2.${suggestBreakfast[1]},\n 3.${suggestBreakfast[2]}\n  Launch:\n 1.${suggestLaunch[0]},\n 2.${suggestLaunch[1]},\n 3.${suggestLaunch[2]} \n  Dinner:\n 1.${suggestDinner[0]},\n 2.${suggestDinner[1]},\n 3.${suggestDinner[2]}
-    \n \n We suggest for breakfast: ${suggestBreakfast[0]}, \n for launch:  ${suggestLaunch[0]}, \n and for dinner:  ${suggestDinner[0]} \n Total Kcal: ${totalSum}`);
+    \n \n Script suggest \n for breakfast: ${suggestBreakfast[0]}, \n for launch:  ${suggestLaunch[0]}, \n and for dinner:  ${suggestDinner[0]} \n Total Kcal: ${totalSum}`);
     
     
 }
@@ -58,7 +59,7 @@ function findIngredients(obj,value){
     let ingredients;
     for (ii= 1; ii < 11; ii++){
         if (obj[ii]['name'] === value){
-            ingredients = obj[ii]['ingredients'];
+            ingredients = (`${obj[ii]['ingredients']} Kcal: ${obj[ii]['kcal']}`);
         }
     }   
     return ingredients; 
